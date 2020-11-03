@@ -15,4 +15,9 @@ public class RestApiController {
     public String returning(@RequestBody DataDto dataDto) {
         return restApiService.returning(dataDto);
     }
+
+    @PostMapping(value = "create")
+    public String returning(@RequestBody String data) {
+        return restApiService.returning(data);
+    }
 }

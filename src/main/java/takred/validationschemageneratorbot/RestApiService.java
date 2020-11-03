@@ -1,11 +1,8 @@
 package takred.validationschemageneratorbot;
 
-import org.springframework.stereotype.Service;
+public interface RestApiService {
 
-@Service
-public class RestApiService {
+    public String returning(DataDto dataDto);
 
-    public String returning(DataDto dataDto) {
-        return dataDto.getData();
-    }
+    public String returning(String data);
 }
